@@ -1,65 +1,33 @@
-# FastAPI server dependencies for TripoSR on RunPod
-
-# Web framework
+# === CORE FASTAPI SERVER ===
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
-python-multipart==0.0.6
-
-# HTTP client
+python-multipart==0.0.9
+pydantic==2.6.1
+pydantic-settings==2.3.4
 httpx==0.26.0
+requests==2.31.0
 
-# 3D processing
+# === TRIPOSR + 3D ===
 trimesh==4.0.8
-# --- API & serveur web ---
-starlette==0.50.0
-pydantic==2.9.0
-python-dotenv
+pyglet==1.5.27
+imageio==2.31.2
+scipy==1.11.4
+numpy==1.26.4
+Pillow==10.2.0
+tifffile==2023.9.26
 
-# --- PyTorch + GPU ---
-torch
-torchvision
-torchaudio
-triton==3.3.1
+# === TORCH (GPU COMPATIBLE) ===
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+
+# === TRANSFORMERS / AI ===
+transformers==4.37.2
+accelerate==0.27.2
 xformers==0.0.31.post1
+safetensors==0.4.3
 
-# --- Numérique / maths / image ---
-numpy==2.2.6
-scipy==1.16.3
-scikit-image==0.25.2
-imageio==2.37.2
-imageio-ffmpeg==0.6.0
-tifffile==2025.10.16
-pillow==12.0.0
-opencv-python-headless==4.12.0.88
+# === OPTIONAL ===
+tqdm==4.66.2
 
-# --- 3D / GLB / rendu ---
-pyglet==2.1.11
-pygltflib==1.16.5
-moderngl==5.12.0
-glcontext==3.0.0
-
-# --- Rembg / onnx / tokenizers ---
-rembg==2.0.68
-onnxruntime==1.23.2
-xatlas==0.0.11
-torchmcubes @ git+https://github.com/tatsy/torchmcubes.git@3381600ddc3d2e4d74222f8495866be5fafbace4
-
-# --- Hugging Face / diffusion / TripoSR dépendances génériques ---
-accelerate==1.12.0
-diffusers==0.35.2
-transformers==4.57.3
-safetensors==0.7.0
-huggingface-hub==0.36.0
-omegaconf==2.3.0
-einops==0.8.1
-tqdm
-
-# --- Async / serveur perf ---
-uvloop==0.22.1
-watchfiles==1.1.1
-websockets==15.0.1
-
-# --- Utilitaires ---
-requests
-regex
 
