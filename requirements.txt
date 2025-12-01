@@ -1,0 +1,23 @@
+# FastAPI server dependencies for TripoSR on RunPod
+
+# Web framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# HTTP client
+httpx==0.26.0
+
+# 3D processing
+trimesh==4.0.8
+pyglet<2  # Required by trimesh for GLB export
+
+# Data validation
+pydantic==2.5.3
+
+# TripoSR dependencies (should already be installed)
+# torch
+# transformers
+# Pillow
+# numpy
+
