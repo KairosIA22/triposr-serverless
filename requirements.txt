@@ -1,35 +1,31 @@
-# --- API & serveur ---
-fastapi
-uvicorn[standard]
-python-multipart
-httpx
-pydantic
-pydantic-settings
+# === CORE FASTAPI SERVER ===
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.9
+pydantic==2.6.1
+pydantic-settings==2.3.4
+httpx==0.26.0
+requests==2.31.0
 
-# --- PyTorch / IA ---
-torch
-torchvision
-torchaudio
-transformers
-accelerate
-safetensors
-xformers
+# === TRIPOSR + 3D ===
+trimesh==4.0.8
+pyglet==1.5.27
+imageio==2.31.2
+scipy==1.11.4
+numpy==1.26.4
+Pillow==10.2.0
+tifffile==2023.9.26
 
-# --- TripoSR / 3D / images ---
-numpy
-scipy
-trimesh
-pyglet<2
-Pillow
-imageio
-tifffile
-opencv-python-headless
+# === TORCH (GPU COMPATIBLE) ===
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
 
-# --- Divers utiles ---
-tqdm
-requests
-einops
-onnxruntime
-rembg
+# === TRANSFORMERS / AI ===
+transformers==4.37.2
+accelerate==0.27.2
+xformers==0.0.31.post1
+safetensors==0.4.3
 
-#A
+# === OPTIONAL ===
+tqdm==4.66.2
